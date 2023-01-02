@@ -20,6 +20,3 @@ function Get_data(){
     })
 
 }
-
-
-setInterval(Get_data,10000)
