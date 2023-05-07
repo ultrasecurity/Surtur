@@ -15,13 +15,8 @@ include "./assets/php/header.php";
     <meta charset="UTF-8">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/updater.js"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
-    <title>Terminal</title>
+    <script src="./assets/js/jquery.min.js"></script>    
+    <title>Surtur Project</title>
 
 </head>
 
