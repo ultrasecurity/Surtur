@@ -6,6 +6,9 @@ if(!isset($_SESSION['IAm-logined'])){
 }
 
 
+file_put_contents("result.txt","");
+file_put_contents("check.txt","");
+
 
 include "../assets/php/header.php";
 ?>
@@ -17,10 +20,8 @@ include "../assets/php/header.php";
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
     <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/updater.js"></script>
+    <script src="../assets/js/rev-shell_updater.js"></script>
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
     <title>Terminal</title>
 
