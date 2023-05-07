@@ -6,7 +6,7 @@ if(!isset($_SESSION['IAm-logined'])){
 }
 
 
-include "./assets/php/header.php"
+include "./assets/php/header.php";
 ?>
 
 <!DOCTYPE html>
@@ -30,62 +30,14 @@ include "./assets/php/header.php"
 
     <!-- header -->
         <?php  echo $header; ?>
-        
-
-        <!-- Dropdown Menu -->
-        
 
     <!-- header end -->
     <div class="mt-2 d-flex justify-content-center ">
-        <p id="path" class="form-control m-1 w-50"> path is loading....</p>
-    </div>
-
-    <div class="mt-2 d-flex justify-content-center ">
-        <input autofocus placeholder="Type Command" type="text" id="cmd" class="form-control m-1 w-50">    
-    </div>
-    
-
-    <div class="mt-2 d-flex justify-content-center">
-        <textarea class="form-control w-50" placeholder="result ..." id="result" rows="10" ></textarea>
+        <p id="path" class="m-1 w-50"> Welcome To Surtur Project</p>
     </div>
 
 
 </body>
-
-<script>
-
-    $(document).ready(function(){
-        request("give_me_path")
-        
-        
-    })
-    
-    $("#cmd").keypress(function(data){
-        if(data.key == "Enter"){
-
-            if($("#cmd").val() == "clear"){
-
-                $("#result").text("")
-                $("#cmd").val("")
-            }
-            
-            else if($("#cmd").val().includes("sudo")){
-                $("#result").text("not support sudo ):")
-                $("#cmd").val("")
-            }
-            
-            else{
-
-                request($("#cmd").val())
-                $("#cmd").val("")
-            }   
-
-        }
-        
-    })
-
-
-</script>
 
 
 </html>
