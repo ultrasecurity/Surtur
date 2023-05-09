@@ -28,7 +28,7 @@ include "./assets/php/header.php";
 
     <!-- header end -->
     <div class="mt-2 d-flex justify-content-center ">
-        <p id="path" class="m-1 w-50"> Welcome To Surtur Project</p>
+        <p id="path" class="text-danger"> Welcome To Surtur Project</p>
     </div>
 
 
